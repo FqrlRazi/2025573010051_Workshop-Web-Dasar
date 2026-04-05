@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulir Pendaftaran</title>
+  </head>
+  <body>
+    <h1>Form pendaftaran Workshop</h1>
+
+    <form action="#" method="POST">
+      <!-- Nama Lengkap -->
+      <div>
+        <label for="nama">Nama Lengkap *</label><br />
+        <input
+          type="text"
+          id="nama"
+          name="nama"
+          placeholder="masukan nama lengkap"
+          minlength="3"
+          maxlegth="100"
+          required
+        />
+      </div>
+
+      <!-- Email-->
+      <div>
+        <label for="Email">Email *</label><br />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="contoh@email.com"
+          required
+        />
+      </div>
+
+      <!-- password-->
+      <div>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          minlength="8"
+          required
+          placeholder="masukan password"
+        />
+      </div>
+      
+      <!-- Tanggal lahir -->
+      <div>
+        <label for="tanggal_lahir"> Tanggal lahir</label><br />
+        <input type="date" id="tanggal_lahir" name="tanggal_lahir" />
+      </div>
+
+      <!-- Jenis Kelamin (radio)-->
+      <div>
+        <p>Jenis Kelamin *</p>
+        <input type="radio" id="laki" name="jenis_kelamin" value="L" required />
+        <label for="laki">Laki-laki</label>
+        <br />
+        <input type="radio" id="perempuan" name="jenis_kelamin" value="P" />
+        <label for="perempuan">Perempuan</label>
+      </div>
+
+      <!-- Kelas / Batch (dropdown) -->
+      <div>
+        <label for="kelas">pilih Kelas *</label><br />
+        <select id="kelas" name="kelas" required>
+          <option value="">-- Pilih Kelas --</option>
+          <option value="A">Kelas A (senin-Rabu)</option>
+          <option value="B">Kelas B (selasa-Kamis)</option>
+          <option value="C">Kelas C (jumat-Sabtu)</option>
+        </select>
+      </div>
+
+      <!-- Minat (checkbox - bisa lebih dari satu) -->
+      <div>
+        <p>Topik yang diminati:</p>
+        <input type="checkbox" id="html" name="minat" value="html" />
+        <label for="html">HTML & CSS</label>
+        <br />
+        <input type="checkbox" id="js" name="minat" value="js" />
+        <label for="js">JavaScript</label>
+        <br />
+        <input type="checkbox" id="react" name="minat" value="react" />
+        <label for="react">React</label>
+        <br />
+      </div>
+
+      <!-- Pesan -->
+      <div>
+        <label for="pesan">pertanyaan atauPesan:</label><br />
+        <textarea
+          id="pesan"
+          name="pesan"
+          rows="4"
+          cols="40"
+          placeholder="Tulis pesan Anda di sini..."
+        ></textarea>
+      </div>
+
+      <!-- Tombol  -->
+      <div>
+        <button type="submit">Daftar sekarang</button>
+        <button type="reset">Reset</button>
+      </div>
+    </form>
+  </body>
+</html>
