@@ -1,0 +1,46 @@
+/* membuat  4 tombol dengan 4 warna yang berbeda */
+/* menggunakan .btn-primary, .btn-secondary,. btn-dengar,. btn-outline.*/
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0; padding: 0;
+}
+.container {
+    display: flex;
+    gap: 20px;
+    margin-top: 50px;
+    margin-left: 50px;
+}  
+.btn {
+    margin-top: auto;
+    padding: 10px 20px;
+}
+.btn-primary {
+    background-color: #2e86c1;
+    color: white; border: none;
+    border-radius: 14px;
+    cursor: pointer;
+}
+
+.btn-secondary {
+    background-color: #28b463;
+    color: white; border: none;
+    border-radius: 14px;
+    cursor: pointer;
+}
+
+.btn-danger {
+    background-color: #c0392b;
+    color: white; border: none;
+    border-radius: 14px;
+    cursor: pointer;
+}
+
+.btn-outline {
+    background-color: transparent; border: 2px solid purple;
+    color: purple;  
+    border-radius: 14px;
+    cursor: pointer;
+}
+
+    
